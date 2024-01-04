@@ -54,6 +54,12 @@
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h">
       <Filter>MindEyeBase</Filter>
     </ClInclude>
+    <ClInclude Include="Hook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsaacMindEye.cpp">
@@ -86,5 +92,14 @@
     <ClCompile Include="Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Hook.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

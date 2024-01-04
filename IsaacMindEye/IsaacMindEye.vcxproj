@@ -263,6 +263,7 @@
   <ItemGroup>
     <ClInclude Include="Common.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h" />
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />
@@ -273,9 +274,11 @@
     <ClInclude Include="MindEyeBase\MindEyeSoundEnv.h" />
     <ClInclude Include="NewFunctions.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Timer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
+    <ClCompile Include="Hook.cpp" />
     <ClCompile Include="IsaacMindEye.cpp" />
     <ClCompile Include="InlineHook.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeCommon.cpp" />
@@ -292,6 +295,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
