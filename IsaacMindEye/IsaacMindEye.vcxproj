@@ -265,6 +265,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
+    <ClInclude Include="IsaacGame.h" />
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h" />
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />
     <ClInclude Include="MindEyeBase\MindEyeDto.h" />
@@ -279,6 +280,7 @@
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="Hook.cpp" />
+    <ClCompile Include="IsaacGame.cpp" />
     <ClCompile Include="IsaacMindEye.cpp" />
     <ClCompile Include="InlineHook.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeCommon.cpp" />
