@@ -266,6 +266,7 @@
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
     <ClInclude Include="IsaacGame.h" />
+    <ClInclude Include="IsaacRoom.h" />
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h" />
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />
     <ClInclude Include="MindEyeBase\MindEyeDto.h" />
@@ -283,6 +284,7 @@
     <ClCompile Include="IsaacGame.cpp" />
     <ClCompile Include="IsaacMindEye.cpp" />
     <ClCompile Include="InlineHook.cpp" />
+    <ClCompile Include="IsaacRoom.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeCommon.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeDto.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeFactory.cpp" />

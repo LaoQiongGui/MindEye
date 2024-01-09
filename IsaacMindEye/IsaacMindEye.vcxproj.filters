@@ -16,6 +16,15 @@
     <Filter Include="MindEyeBase">
       <UniqueIdentifier>{21d77712-9c0c-4625-b3d8-9c4cddda03a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="IssacGame">
+      <UniqueIdentifier>{25d5a6e8-2644-46c9-918b-ab1e5130f3d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IssacGame\头文件">
+      <UniqueIdentifier>{e526d462-4fa9-4a95-b5e0-3fc9bbfe0845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IssacGame\源文件">
+      <UniqueIdentifier>{cc2d61fa-f0b4-45a1-9804-8fb53b93db6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -61,7 +70,10 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="IsaacGame.h">
-      <Filter>头文件</Filter>
+      <Filter>IssacGame\源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsaacRoom.h">
+      <Filter>IssacGame\源文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -102,7 +114,10 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="IsaacGame.cpp">
-      <Filter>源文件</Filter>
+      <Filter>IssacGame\头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IsaacRoom.cpp">
+      <Filter>IssacGame\头文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
