@@ -266,6 +266,7 @@
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
     <ClInclude Include="IsaacGame.h" />
+    <ClInclude Include="IsaacMindEye.h" />
     <ClInclude Include="IsaacRoom.h" />
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h" />
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />

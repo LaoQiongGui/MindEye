@@ -75,6 +75,9 @@
     <ClInclude Include="IsaacRoom.h">
       <Filter>IssacGame\源文件</Filter>
     </ClInclude>
+    <ClInclude Include="IsaacMindEye.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsaacMindEye.cpp">
