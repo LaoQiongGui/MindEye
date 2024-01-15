@@ -124,6 +124,7 @@
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(VC_ReferencesPath_x86);</ReferencePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|Win32'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
@@ -265,9 +266,9 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
-    <ClInclude Include="IsaacGame.h" />
+    <ClInclude Include="IsaacGame\IsaacGame.h" />
+    <ClInclude Include="IsaacGame\IsaacRoom.h" />
     <ClInclude Include="IsaacMindEye.h" />
-    <ClInclude Include="IsaacRoom.h" />
     <ClInclude Include="MindEyeBase\MindEyeCodeTable.h" />
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />
     <ClInclude Include="MindEyeBase\MindEyeDto.h" />
@@ -282,10 +283,10 @@
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="Hook.cpp" />
-    <ClCompile Include="IsaacGame.cpp" />
+    <ClCompile Include="IsaacGame\IsaacGame.cpp" />
+    <ClCompile Include="IsaacGame\IsaacRoom.cpp" />
     <ClCompile Include="IsaacMindEye.cpp" />
     <ClCompile Include="InlineHook.cpp" />
-    <ClCompile Include="IsaacRoom.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeCommon.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeDto.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeFactory.cpp" />

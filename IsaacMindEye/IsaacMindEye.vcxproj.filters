@@ -69,14 +69,14 @@
     <ClInclude Include="Timer.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="IsaacGame.h">
-      <Filter>IssacGame\源文件</Filter>
-    </ClInclude>
-    <ClInclude Include="IsaacRoom.h">
-      <Filter>IssacGame\源文件</Filter>
-    </ClInclude>
     <ClInclude Include="IsaacMindEye.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsaacGame\IsaacGame.h">
+      <Filter>IssacGame\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IsaacGame\IsaacRoom.h">
+      <Filter>IssacGame\头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -116,11 +116,11 @@
     <ClCompile Include="Timer.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="IsaacGame.cpp">
-      <Filter>IssacGame\头文件</Filter>
+    <ClCompile Include="IsaacGame\IsaacRoom.cpp">
+      <Filter>IssacGame\源文件</Filter>
     </ClCompile>
-    <ClCompile Include="IsaacRoom.cpp">
-      <Filter>IssacGame\头文件</Filter>
+    <ClCompile Include="IsaacGame\IsaacGame.cpp">
+      <Filter>IssacGame\源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
