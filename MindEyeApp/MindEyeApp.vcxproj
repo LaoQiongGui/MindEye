@@ -107,11 +107,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PEAnalyze.cpp" />
     <QtRcc Include="MindEyeApp.qrc" />
     <QtUic Include="MindEyeApp.ui" />
     <QtMoc Include="MindEyeApp.h" />
+    <ClCompile Include="Common.cpp" />
     <ClCompile Include="MindEyeApp.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="PEAnalyze.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

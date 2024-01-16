@@ -13,7 +13,54 @@
   <property name="windowTitle">
    <string>MindEyeApp</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="mainTabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>363</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="isaacTabWidget">
+     <attribute name="title">
+      <string>以撒辅助</string>
+     </attribute>
+     <widget class="QPushButton" name="isaacBeginBtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>启动以撒辅助</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="isaacTerminateBtn">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>125</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>关闭以撒辅助</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="terrainTabWidget">
+     <attribute name="title">
+      <string>TODO</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
