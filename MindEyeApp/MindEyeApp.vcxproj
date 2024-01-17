@@ -81,6 +81,9 @@
     <ClCompile>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(Qt_LIBS_)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
     <ClCompile>
