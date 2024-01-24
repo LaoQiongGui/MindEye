@@ -271,6 +271,7 @@
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
     <ClInclude Include="IsaacGame\IsaacGame.h" />
+    <ClInclude Include="IsaacGame\IsaacGamePub.h" />
     <ClInclude Include="IsaacGame\IsaacObject.h" />
     <ClInclude Include="IsaacGame\IsaacRoom.h" />
     <ClInclude Include="IsaacMindEye.h" />
