@@ -81,6 +81,9 @@
     <ClInclude Include="IsaacGame\IsaacGamePub.h">
       <Filter>IssacGame\头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeWave.h">
+      <Filter>MindEyeBase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsaacMindEye.cpp">
@@ -124,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="IsaacGame\IsaacObject.cpp">
       <Filter>IssacGame\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeWave.cpp">
+      <Filter>MindEyeBase</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
