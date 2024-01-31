@@ -25,6 +25,12 @@
     <Filter Include="IssacGame\源文件">
       <UniqueIdentifier>{cc2d61fa-f0b4-45a1-9804-8fb53b93db6a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="MindEyeBase\头文件">
+      <UniqueIdentifier>{c92680ee-b826-4245-a93a-be85026c82ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MindEyeBase\源文件">
+      <UniqueIdentifier>{b46c87be-3aef-4818-9b03-fbde292ff86b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -38,27 +44,6 @@
     </ClInclude>
     <ClInclude Include="NewFunctions.h">
       <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeFactory.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeRenderer2D.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeRendererBase.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeSoundEnv.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeCommon.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeDto.h">
-      <Filter>MindEyeBase</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeBase\MindEyeCodeTable.h">
-      <Filter>MindEyeBase</Filter>
     </ClInclude>
     <ClInclude Include="Hook.h">
       <Filter>头文件</Filter>
@@ -81,8 +66,29 @@
     <ClInclude Include="IsaacGame\IsaacGamePub.h">
       <Filter>IssacGame\头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeCodeTable.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeCommon.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeDto.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeFactory.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeRenderer2D.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeRendererBase.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeSoundEnv.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
     <ClInclude Include="MindEyeBase\MindEyeWave.h">
-      <Filter>MindEyeBase</Filter>
+      <Filter>MindEyeBase\头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -94,21 +100,6 @@
     </ClCompile>
     <ClCompile Include="NewFunctions.cpp">
       <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeBase\MindEyeRenderer2D.cpp">
-      <Filter>MindEyeBase</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeBase\MindEyeSoundEnv.cpp">
-      <Filter>MindEyeBase</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeBase\MindEyeCommon.cpp">
-      <Filter>MindEyeBase</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeBase\MindEyeDto.cpp">
-      <Filter>MindEyeBase</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeBase\MindEyeFactory.cpp">
-      <Filter>MindEyeBase</Filter>
     </ClCompile>
     <ClCompile Include="Common.cpp">
       <Filter>源文件</Filter>
@@ -128,8 +119,23 @@
     <ClCompile Include="IsaacGame\IsaacObject.cpp">
       <Filter>IssacGame\源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeCommon.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeDto.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeFactory.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeRenderer2D.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeSoundEnv.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
     <ClCompile Include="MindEyeBase\MindEyeWave.cpp">
-      <Filter>MindEyeBase</Filter>
+      <Filter>MindEyeBase\源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
