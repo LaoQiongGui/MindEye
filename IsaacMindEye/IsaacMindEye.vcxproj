@@ -273,7 +273,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
-    <ClInclude Include="framework.h" />
     <ClInclude Include="Hook.h" />
     <ClInclude Include="InlineHook.h" />
     <ClInclude Include="IsaacGame\IsaacGame.h" />
