@@ -87,6 +87,9 @@
     <ClInclude Include="MindEyeBase\MindEyeWave.h">
       <Filter>MindEyeBase\头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeResourcesManager.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsaacMindEye.cpp">
@@ -132,6 +135,9 @@
       <Filter>MindEyeBase\源文件</Filter>
     </ClCompile>
     <ClCompile Include="MindEyeBase\MindEyeWave.cpp">
+      <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeResourcesManager.cpp">
       <Filter>MindEyeBase\源文件</Filter>
     </ClCompile>
   </ItemGroup>
