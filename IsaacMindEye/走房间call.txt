@@ -1,0 +1,340 @@
+isaac-ng.exe+3AE920 - 55                    - push ebp
+isaac-ng.exe+3AE921 - 8B EC                 - mov ebp,esp
+isaac-ng.exe+3AE923 - 83 E4 F8              - and esp,-08
+isaac-ng.exe+3AE926 - 83 EC 50              - sub esp,50
+isaac-ng.exe+3AE929 - A1 B4A3CB00           - mov eax,[isaac-ng.exe+7AA3B4]
+isaac-ng.exe+3AE92E - 33 C4                 - xor eax,esp
+isaac-ng.exe+3AE930 - 89 44 24 4C           - mov [esp+4C],eax
+isaac-ng.exe+3AE934 - 56                    - push esi
+isaac-ng.exe+3AE935 - 8B F1                 - mov esi,ecx
+isaac-ng.exe+3AE937 - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AE93D - 57                    - push edi
+isaac-ng.exe+3AE93E - 89 74 24 18           - mov [esp+18],esi
+isaac-ng.exe+3AE942 - 83 B9 C0B60100 00     - cmp dword ptr [ecx+0001B6C0],00
+isaac-ng.exe+3AE949 - 0F85 D3040000         - jne isaac-ng.exe+3AEE22
+isaac-ng.exe+3AE94F - 8B 46 04              - mov eax,[esi+04]
+isaac-ng.exe+3AE952 - 8B 40 10              - mov eax,[eax+10]
+isaac-ng.exe+3AE955 - 85 C0                 - test eax,eax
+isaac-ng.exe+3AE957 - 74 0F                 - je isaac-ng.exe+3AE968
+isaac-ng.exe+3AE959 - 83 78 08 10           - cmp dword ptr [eax+08],10
+isaac-ng.exe+3AE95D - 75 09                 - jne isaac-ng.exe+3AE968
+isaac-ng.exe+3AE95F - 83 38 23              - cmp dword ptr [eax],23
+isaac-ng.exe+3AE962 - 0F84 BA040000         - je isaac-ng.exe+3AEE22
+isaac-ng.exe+3AE968 - 8B 81 54BA0100        - mov eax,[ecx+0001BA54]
+isaac-ng.exe+3AE96E - 33 D2                 - xor edx,edx
+isaac-ng.exe+3AE970 - 2B 81 50BA0100        - sub eax,[ecx+0001BA50]
+isaac-ng.exe+3AE976 - C1 F8 02              - sar eax,02
+isaac-ng.exe+3AE979 - 89 54 24 28           - mov [esp+28],edx
+isaac-ng.exe+3AE97D - 85 C0                 - test eax,eax
+isaac-ng.exe+3AE97F - 0F84 9D040000         - je isaac-ng.exe+3AEE22
+isaac-ng.exe+3AE985 - 52                    - push edx
+isaac-ng.exe+3AE986 - E8 C53DC6FF           - call isaac-ng.epoxy_handle_external_wglMakeCurrent+B130
+isaac-ng.exe+3AE98B - 8B D0                 - mov edx,eax
+isaac-ng.exe+3AE98D - 89 54 24 14           - mov [esp+14],edx
+isaac-ng.exe+3AE991 - 83 7A 2C 00           - cmp dword ptr [edx+2C],00
+isaac-ng.exe+3AE995 - 0F85 D0020000         - jne isaac-ng.exe+3AEC6B
+isaac-ng.exe+3AE99B - F3 0F10 92 94020000   - movss xmm2,[edx+00000294]
+isaac-ng.exe+3AE9A3 - 8D 86 24070000        - lea eax,[esi+00000724]
+isaac-ng.exe+3AE9A9 - F3 0F10 9A 98020000   - movss xmm3,[edx+00000298]
+isaac-ng.exe+3AE9B1 - 33 FF                 - xor edi,edi
+isaac-ng.exe+3AE9B3 - F3 0F11 54 24 0C      - movss [esp+0C],xmm2
+isaac-ng.exe+3AE9B9 - 8B F0                 - mov esi,eax
+isaac-ng.exe+3AE9BB - F3 0F11 5C 24 10      - movss [esp+10],xmm3
+isaac-ng.exe+3AE9C1 - 89 44 24 1C           - mov [esp+1C],eax
+isaac-ng.exe+3AE9C5 - 0F28 05 30CAC700      - movaps xmm0,[isaac-ng.exe+76CA30]
+isaac-ng.exe+3AE9CC - 8B C7                 - mov eax,edi
+isaac-ng.exe+3AE9CE - 8B 36                 - mov esi,[esi]
+isaac-ng.exe+3AE9D0 - 83 E0 03              - and eax,03
+isaac-ng.exe+3AE9D3 - 89 44 24 20           - mov [esp+20],eax
+isaac-ng.exe+3AE9D7 - 0F11 44 24 34         - movups [esp+34],xmm0
+isaac-ng.exe+3AE9DC - 0F28 05 F0C8C700      - movaps xmm0,[isaac-ng.exe+76C8F0]
+isaac-ng.exe+3AE9E3 - 0F11 44 24 44         - movups [esp+44],xmm0
+isaac-ng.exe+3AE9E8 - 85 F6                 - test esi,esi
+isaac-ng.exe+3AE9EA - 0F84 EC010000         - je isaac-ng.exe+3AEBDC
+isaac-ng.exe+3AE9F0 - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AE9F5 - F3 0F10 25 3CAAC700   - movss xmm4,[isaac-ng.exe+76AA3C]
+isaac-ng.exe+3AE9FD - 8B 88 90810100        - mov ecx,[eax+00018190]
+isaac-ng.exe+3AEA03 - 8B 46 24              - mov eax,[esi+24]
+isaac-ng.exe+3AEA06 - 99                    - cdq 
+isaac-ng.exe+3AEA07 - 8B 49 0C              - mov ecx,[ecx+0C]
+isaac-ng.exe+3AEA0A - F7 F9                 - idiv ecx
+isaac-ng.exe+3AEA0C - 8B 4C 24 20           - mov ecx,[esp+20]
+isaac-ng.exe+3AEA10 - 66 0F6E CA            - movd xmm1,edx
+isaac-ng.exe+3AEA14 - 0F5B C9               - cvtdq2ps xmm1,xmm1
+isaac-ng.exe+3AEA17 - 66 0F6E C0            - movd xmm0,eax
+isaac-ng.exe+3AEA1B - 0F5B C0               - cvtdq2ps xmm0,xmm0
+isaac-ng.exe+3AEA1E - F3 0F59 CC            - mulss xmm1,xmm4
+isaac-ng.exe+3AEA22 - F3 0F59 C4            - mulss xmm0,xmm4
+isaac-ng.exe+3AEA26 - F3 0F58 CC            - addss xmm1,xmm4
+isaac-ng.exe+3AEA2A - F3 0F58 05 20ABC700   - addss xmm0,[isaac-ng.exe+76AB20]
+isaac-ng.exe+3AEA32 - F3 0F58 4C CC 34      - addss xmm1,[esp+ecx*8+34]
+isaac-ng.exe+3AEA38 - F3 0F58 44 CC 38      - addss xmm0,[esp+ecx*8+38]
+isaac-ng.exe+3AEA3E - F3 0F11 4C 24 2C      - movss [esp+2C],xmm1
+isaac-ng.exe+3AEA44 - F3 0F5C CA            - subss xmm1,xmm2
+isaac-ng.exe+3AEA48 - F3 0F11 44 24 30      - movss [esp+30],xmm0
+isaac-ng.exe+3AEA4E - F3 0F5C C3            - subss xmm0,xmm3
+isaac-ng.exe+3AEA52 - F3 0F59 C9            - mulss xmm1,xmm1
+isaac-ng.exe+3AEA56 - F3 0F59 C0            - mulss xmm0,xmm0
+isaac-ng.exe+3AEA5A - F3 0F58 C1            - addss xmm0,xmm1
+isaac-ng.exe+3AEA5E - E8 5D3EC7FF           - call isaac-ng.exe+228C0
+isaac-ng.exe+3AEA63 - 8B 54 24 14           - mov edx,[esp+14]
+isaac-ng.exe+3AEA67 - 0F28 E0               - movaps xmm4,xmm0
+isaac-ng.exe+3AEA6A - 83 BA 0C130000 23     - cmp dword ptr [edx+0000130C],23
+isaac-ng.exe+3AEA71 - 8B 8A 58150000        - mov ecx,[edx+00001558]
+isaac-ng.exe+3AEA77 - 0F85 CD000000         - jne isaac-ng.exe+3AEB4A
+isaac-ng.exe+3AEA7D - F3 0F10 9A B8020000   - movss xmm3,[edx+000002B8]
+isaac-ng.exe+3AEA85 - F3 0F10 92 BC020000   - movss xmm2,[edx+000002BC]
+isaac-ng.exe+3AEA8D - 0F28 CB               - movaps xmm1,xmm3
+isaac-ng.exe+3AEA90 - 0F28 C2               - movaps xmm0,xmm2
+isaac-ng.exe+3AEA93 - F3 0F59 CB            - mulss xmm1,xmm3
+isaac-ng.exe+3AEA97 - F3 0F59 C2            - mulss xmm0,xmm2
+isaac-ng.exe+3AEA9B - F3 0F58 C8            - addss xmm1,xmm0
+isaac-ng.exe+3AEA9F - 0F2F 0D CCA8C700      - comiss xmm1,[isaac-ng.exe+76A8CC]
+isaac-ng.exe+3AEAA6 - 0F86 9E000000         - jbe isaac-ng.exe+3AEB4A
+isaac-ng.exe+3AEAAC - 0F28 C2               - movaps xmm0,xmm2
+isaac-ng.exe+3AEAAF - 0F28 CB               - movaps xmm1,xmm3
+isaac-ng.exe+3AEAB2 - 0F54 05 80C9C700      - andps xmm0,[isaac-ng.exe+76C980]
+isaac-ng.exe+3AEAB9 - 0F54 0D 80C9C700      - andps xmm1,[isaac-ng.exe+76C980]
+isaac-ng.exe+3AEAC0 - 0F2F C8               - comiss xmm1,xmm0
+isaac-ng.exe+3AEAC3 - 0F57 C0               - xorps xmm0,xmm0
+isaac-ng.exe+3AEAC6 - 76 0F                 - jna isaac-ng.exe+3AEAD7
+isaac-ng.exe+3AEAC8 - 33 C0                 - xor eax,eax
+isaac-ng.exe+3AEACA - B9 02000000           - mov ecx,00000002
+isaac-ng.exe+3AEACF - 0F2F C3               - comiss xmm0,xmm3
+isaac-ng.exe+3AEAD2 - 0F47 C8               - cmova ecx,eax
+isaac-ng.exe+3AEAD5 - EB 0F                 - jmp isaac-ng.exe+3AEAE6
+isaac-ng.exe+3AEAD7 - 33 C9                 - xor ecx,ecx
+isaac-ng.exe+3AEAD9 - 0F2F C2               - comiss xmm0,xmm2
+isaac-ng.exe+3AEADC - 0F96 C1               - setbe cl
+isaac-ng.exe+3AEADF - 8D 0C 4D 01000000     - lea ecx,[ecx*2+00000001]
+isaac-ng.exe+3AEAE6 - 8B 46 08              - mov eax,[esi+08]
+isaac-ng.exe+3AEAE9 - 89 4C 24 24           - mov [esp+24],ecx
+isaac-ng.exe+3AEAED - 83 F8 01              - cmp eax,01
+isaac-ng.exe+3AEAF0 - 74 14                 - je isaac-ng.exe+3AEB06
+isaac-ng.exe+3AEAF2 - 83 F8 04              - cmp eax,04
+isaac-ng.exe+3AEAF5 - 74 0F                 - je isaac-ng.exe+3AEB06
+isaac-ng.exe+3AEAF7 - 83 F8 03              - cmp eax,03
+isaac-ng.exe+3AEAFA - 74 0A                 - je isaac-ng.exe+3AEB06
+isaac-ng.exe+3AEAFC - 83 F8 02              - cmp eax,02
+isaac-ng.exe+3AEAFF - 74 05                 - je isaac-ng.exe+3AEB06
+isaac-ng.exe+3AEB01 - 83 F8 05              - cmp eax,05
+isaac-ng.exe+3AEB04 - 75 44                 - jne isaac-ng.exe+3AEB4A
+isaac-ng.exe+3AEB06 - F3 0F10 4C 24 2C      - movss xmm1,[esp+2C]
+isaac-ng.exe+3AEB0C - F3 0F58 DB            - addss xmm3,xmm3
+isaac-ng.exe+3AEB10 - F3 0F10 44 24 30      - movss xmm0,[esp+30]
+isaac-ng.exe+3AEB16 - F3 0F58 D2            - addss xmm2,xmm2
+isaac-ng.exe+3AEB1A - F3 0F58 5C 24 0C      - addss xmm3,[esp+0C]
+isaac-ng.exe+3AEB20 - F3 0F58 54 24 10      - addss xmm2,[esp+10]
+isaac-ng.exe+3AEB26 - F3 0F5C CB            - subss xmm1,xmm3
+isaac-ng.exe+3AEB2A - F3 0F5C C2            - subss xmm0,xmm2
+isaac-ng.exe+3AEB2E - F3 0F59 C9            - mulss xmm1,xmm1
+isaac-ng.exe+3AEB32 - F3 0F59 C0            - mulss xmm0,xmm0
+isaac-ng.exe+3AEB36 - F3 0F58 C1            - addss xmm0,xmm1
+isaac-ng.exe+3AEB3A - E8 813DC7FF           - call isaac-ng.exe+228C0
+isaac-ng.exe+3AEB3F - 8B 4C 24 24           - mov ecx,[esp+24]
+isaac-ng.exe+3AEB43 - 0F28 E0               - movaps xmm4,xmm0
+isaac-ng.exe+3AEB46 - 8B 54 24 14           - mov edx,[esp+14]
+isaac-ng.exe+3AEB4A - F6 86 88020000 10     - test byte ptr [esi+00000288],10
+isaac-ng.exe+3AEB51 - 8B 46 0C              - mov eax,[esi+0C]
+isaac-ng.exe+3AEB54 - 74 08                 - je isaac-ng.exe+3AEB5E
+isaac-ng.exe+3AEB56 - 83 F8 02              - cmp eax,02
+isaac-ng.exe+3AEB59 - 0F95 C0               - setne al
+isaac-ng.exe+3AEB5C - EB 06                 - jmp isaac-ng.exe+3AEB64
+isaac-ng.exe+3AEB5E - 83 F8 02              - cmp eax,02
+isaac-ng.exe+3AEB61 - 0F94 C0               - sete al
+isaac-ng.exe+3AEB64 - 84 C0                 - test al,al
+isaac-ng.exe+3AEB66 - 74 11                 - je isaac-ng.exe+3AEB79
+isaac-ng.exe+3AEB68 - F3 0F10 05 ECA9C700   - movss xmm0,[isaac-ng.exe+76A9EC]
+isaac-ng.exe+3AEB70 - 0F2F C4               - comiss xmm0,xmm4
+isaac-ng.exe+3AEB73 - 0F87 29010000         - ja isaac-ng.exe+3AECA2
+isaac-ng.exe+3AEB79 - 8B 46 08              - mov eax,[esi+08]
+isaac-ng.exe+3AEB7C - 83 F8 01              - cmp eax,01
+isaac-ng.exe+3AEB7F - 74 14                 - je isaac-ng.exe+3AEB95
+isaac-ng.exe+3AEB81 - 83 F8 04              - cmp eax,04
+isaac-ng.exe+3AEB84 - 74 0F                 - je isaac-ng.exe+3AEB95
+isaac-ng.exe+3AEB86 - 83 F8 03              - cmp eax,03
+isaac-ng.exe+3AEB89 - 74 0A                 - je isaac-ng.exe+3AEB95
+isaac-ng.exe+3AEB8B - 83 F8 02              - cmp eax,02
+isaac-ng.exe+3AEB8E - 74 05                 - je isaac-ng.exe+3AEB95
+isaac-ng.exe+3AEB90 - 83 F8 05              - cmp eax,05
+isaac-ng.exe+3AEB93 - 75 3B                 - jne isaac-ng.exe+3AEBD0
+isaac-ng.exe+3AEB95 - 8B 44 24 18           - mov eax,[esp+18]
+isaac-ng.exe+3AEB99 - 8B 40 04              - mov eax,[eax+04]
+isaac-ng.exe+3AEB9C - F6 40 44 01           - test byte ptr [eax+44],01
+isaac-ng.exe+3AEBA0 - 74 2E                 - je isaac-ng.exe+3AEBD0
+isaac-ng.exe+3AEBA2 - F3 0F10 05 8CAAC700   - movss xmm0,[isaac-ng.exe+76AA8C]
+isaac-ng.exe+3AEBAA - 0F2F C4               - comiss xmm0,xmm4
+isaac-ng.exe+3AEBAD - 76 21                 - jna isaac-ng.exe+3AEBD0
+isaac-ng.exe+3AEBAF - 3B 4C 24 20           - cmp ecx,[esp+20]
+isaac-ng.exe+3AEBB3 - 75 1B                 - jne isaac-ng.exe+3AEBD0
+isaac-ng.exe+3AEBB5 - 57                    - push edi
+isaac-ng.exe+3AEBB6 - E8 C593F2FF           - call isaac-ng.exe+2D7F80
+isaac-ng.exe+3AEBBB - 8B 44 24 1C           - mov eax,[esp+1C]
+isaac-ng.exe+3AEBBF - 6A 00                 - push 00
+isaac-ng.exe+3AEBC1 - FF 74 24 18           - push [esp+18]
+isaac-ng.exe+3AEBC5 - 8B 08                 - mov ecx,[eax]
+isaac-ng.exe+3AEBC7 - E8 F41FF3FF           - call isaac-ng.exe+2E0BC0
+isaac-ng.exe+3AEBCC - 8B 54 24 14           - mov edx,[esp+14]
+isaac-ng.exe+3AEBD0 - F3 0F10 54 24 0C      - movss xmm2,[esp+0C]
+isaac-ng.exe+3AEBD6 - F3 0F10 5C 24 10      - movss xmm3,[esp+10]
+isaac-ng.exe+3AEBDC - 8B 74 24 1C           - mov esi,[esp+1C]
+isaac-ng.exe+3AEBE0 - 47                    - inc edi
+isaac-ng.exe+3AEBE1 - 83 C6 04              - add esi,04
+isaac-ng.exe+3AEBE4 - 89 74 24 1C           - mov [esp+1C],esi
+isaac-ng.exe+3AEBE8 - 83 FF 08              - cmp edi,08
+isaac-ng.exe+3AEBEB - 0F82 D4FDFFFF         - jb isaac-ng.exe+3AE9C5
+isaac-ng.exe+3AEBF1 - 8B 74 24 18           - mov esi,[esp+18]
+isaac-ng.exe+3AEBF5 - 83 7E 08 10           - cmp dword ptr [esi+08],10
+isaac-ng.exe+3AEBF9 - 75 70                 - jne isaac-ng.exe+3AEC6B
+isaac-ng.exe+3AEBFB - F3 0F10 05 20ABC700   - movss xmm0,[isaac-ng.exe+76AB20]
+isaac-ng.exe+3AEC03 - 0F2F C3               - comiss xmm0,xmm3
+isaac-ng.exe+3AEC06 - 0F87 F9010000         - ja isaac-ng.exe+3AEE05
+isaac-ng.exe+3AEC0C - F3 0F10 05 10ABC700   - movss xmm0,[isaac-ng.exe+76AB10]
+isaac-ng.exe+3AEC14 - 0F2F C3               - comiss xmm0,xmm3
+isaac-ng.exe+3AEC17 - 76 1A                 - jna isaac-ng.exe+3AEC33
+isaac-ng.exe+3AEC19 - 0F2F 15 FCAAC700      - comiss xmm2,[isaac-ng.exe+76AAFC]
+isaac-ng.exe+3AEC20 - 76 11                 - jna isaac-ng.exe+3AEC33
+isaac-ng.exe+3AEC22 - F3 0F10 05 44ABC700   - movss xmm0,[isaac-ng.exe+76AB44]
+isaac-ng.exe+3AEC2A - 0F2F C2               - comiss xmm0,xmm2
+isaac-ng.exe+3AEC2D - 0F87 D2010000         - ja isaac-ng.exe+3AEE05
+isaac-ng.exe+3AEC33 - F3 0F10 46 1C         - movss xmm0,[esi+1C]
+isaac-ng.exe+3AEC38 - F3 0F10 0D C8A9C700   - movss xmm1,[isaac-ng.exe+76A9C8]
+isaac-ng.exe+3AEC40 - F3 0F58 C1            - addss xmm0,xmm1
+isaac-ng.exe+3AEC44 - 0F2F D0               - comiss xmm2,xmm0
+isaac-ng.exe+3AEC47 - 0F87 70010000         - ja isaac-ng.exe+3AEDBD
+isaac-ng.exe+3AEC4D - 0F57 C0               - xorps xmm0,xmm0
+isaac-ng.exe+3AEC50 - 0F2F C2               - comiss xmm0,xmm2
+isaac-ng.exe+3AEC53 - 0F87 4A010000         - ja isaac-ng.exe+3AEDA3
+isaac-ng.exe+3AEC59 - F3 0F10 46 20         - movss xmm0,[esi+20]
+isaac-ng.exe+3AEC5E - F3 0F58 C1            - addss xmm0,xmm1
+isaac-ng.exe+3AEC62 - 0F2F D8               - comiss xmm3,xmm0
+isaac-ng.exe+3AEC65 - 0F87 1B010000         - ja isaac-ng.exe+3AED86
+isaac-ng.exe+3AEC6B - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AEC71 - 8B 54 24 28           - mov edx,[esp+28]
+isaac-ng.exe+3AEC75 - 42                    - inc edx
+isaac-ng.exe+3AEC76 - 89 54 24 28           - mov [esp+28],edx
+isaac-ng.exe+3AEC7A - 8B 81 54BA0100        - mov eax,[ecx+0001BA54]
+isaac-ng.exe+3AEC80 - 2B 81 50BA0100        - sub eax,[ecx+0001BA50]
+isaac-ng.exe+3AEC86 - C1 F8 02              - sar eax,02
+isaac-ng.exe+3AEC89 - 3B D0                 - cmp edx,eax
+isaac-ng.exe+3AEC8B - 0F82 F4FCFFFF         - jb isaac-ng.exe+3AE985
+isaac-ng.exe+3AEC91 - 5F                    - pop edi
+isaac-ng.exe+3AEC92 - 5E                    - pop esi
+isaac-ng.exe+3AEC93 - 8B 4C 24 4C           - mov ecx,[esp+4C]
+isaac-ng.exe+3AEC97 - 33 CC                 - xor ecx,esp
+isaac-ng.exe+3AEC99 - E8 39C02300           - call isaac-ng.exe+5EACD7
+isaac-ng.exe+3AEC9E - 8B E5                 - mov esp,ebp
+isaac-ng.exe+3AECA0 - 5D                    - pop ebp
+isaac-ng.exe+3AECA1 - C3                    - ret 
+isaac-ng.exe+3AECA2 - 57                    - push edi
+isaac-ng.exe+3AECA3 - E8 D892F2FF           - call isaac-ng.exe+2D7F80
+isaac-ng.exe+3AECA8 - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AECAE - 8B 74 24 18           - mov esi,[esp+18]
+isaac-ng.exe+3AECB2 - 89 B9 A8810100        - mov [ecx+000181A8],edi
+isaac-ng.exe+3AECB8 - 8B 84 BE 24070000     - mov eax,[esi+edi*4+00000724]
+isaac-ng.exe+3AECBF - 83 B8 7C020000 FF     - cmp dword ptr [eax+0000027C],-01
+isaac-ng.exe+3AECC6 - 75 63                 - jne isaac-ng.exe+3AED2B
+isaac-ng.exe+3AECC8 - 6A FF                 - push -01
+isaac-ng.exe+3AECCA - 6A FF                 - push -01
+isaac-ng.exe+3AECCC - E8 1FF4F5FF           - call isaac-ng.exe+30E0F0
+isaac-ng.exe+3AECD1 - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AECD7 - 83 78 10 00           - cmp dword ptr [eax+10],00
+isaac-ng.exe+3AECDB - 75 4E                 - jne isaac-ng.exe+3AED2B
+isaac-ng.exe+3AECDD - 8B 84 BE 24070000     - mov eax,[esi+edi*4+00000724]
+isaac-ng.exe+3AECE4 - 8B B0 5C010000        - mov esi,[eax+0000015C]
+isaac-ng.exe+3AECEA - 83 FE 0F              - cmp esi,0F
+isaac-ng.exe+3AECED - 0F95 C0               - setne al
+isaac-ng.exe+3AECF0 - 0FB6 C0               - movzx eax,al
+isaac-ng.exe+3AECF3 - 50                    - push eax
+isaac-ng.exe+3AECF4 - 0F94 C0               - sete al
+isaac-ng.exe+3AECF7 - 0FB6 C0               - movzx eax,al
+isaac-ng.exe+3AECFA - 50                    - push eax
+isaac-ng.exe+3AECFB - E8 007EF6FF           - call isaac-ng.exe+316B00
+isaac-ng.exe+3AED00 - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AED06 - 83 FE 0F              - cmp esi,0F
+isaac-ng.exe+3AED09 - 8B 74 24 18           - mov esi,[esp+18]
+isaac-ng.exe+3AED0D - 8B 81 6C311C00        - mov eax,[ecx+001C316C]
+isaac-ng.exe+3AED13 - 89 81 6C311C00        - mov [ecx+001C316C],eax
+isaac-ng.exe+3AED19 - 75 09                 - jne isaac-ng.exe+3AED24
+isaac-ng.exe+3AED1B - 83 89 68311C00 01     - or dword ptr [ecx+001C3168],01
+isaac-ng.exe+3AED22 - EB 07                 - jmp isaac-ng.exe+3AED2B
+isaac-ng.exe+3AED24 - 83 89 68311C00 20     - or dword ptr [ecx+001C3168],20
+isaac-ng.exe+3AED2B - 8B 84 BE 24070000     - mov eax,[esi+edi*4+00000724]
+isaac-ng.exe+3AED32 - 6A FF                 - push -01
+isaac-ng.exe+3AED34 - 8B 80 7C020000        - mov eax,[eax+0000027C]
+isaac-ng.exe+3AED3A - 83 F8 9C              - cmp eax,-64
+isaac-ng.exe+3AED3D - 7F 37                 - jg isaac-ng.exe+3AED76
+isaac-ng.exe+3AED3F - 50                    - push eax
+isaac-ng.exe+3AED40 - E8 ABF3F5FF           - call isaac-ng.exe+30E0F0
+isaac-ng.exe+3AED45 - 8B 8C BE 24070000     - mov ecx,[esi+edi*4+00000724]
+isaac-ng.exe+3AED4C - BA 12000000           - mov edx,00000012
+isaac-ng.exe+3AED51 - 33 F6                 - xor esi,esi
+isaac-ng.exe+3AED53 - FF 70 0C              - push [eax+0C]
+isaac-ng.exe+3AED56 - 83 B9 7C020000 9C     - cmp dword ptr [ecx+0000027C],-64
+isaac-ng.exe+3AED5D - FF 74 24 18           - push [esp+18]
+isaac-ng.exe+3AED61 - 8B 0D 5CD6D000        - mov ecx,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AED67 - 0F45 D6               - cmovne edx,esi
+isaac-ng.exe+3AED6A - 52                    - push edx
+isaac-ng.exe+3AED6B - FF 74 24 2C           - push [esp+2C]
+isaac-ng.exe+3AED6F - FF 30                 - push [eax]
+isaac-ng.exe+3AED71 - E9 A7000000           - jmp isaac-ng.exe+3AEE1D
+isaac-ng.exe+3AED76 - FF 74 24 18           - push [esp+18]
+isaac-ng.exe+3AED7A - 6A 00                 - push 00
+isaac-ng.exe+3AED7C - FF 74 24 2C           - push [esp+2C]
+isaac-ng.exe+3AED80 - 50                    - push eax
+isaac-ng.exe+3AED81 - E9 97000000           - jmp isaac-ng.exe+3AEE1D       # 走房间
+isaac-ng.exe+3AED86 - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AED8B - 6A FF                 - push -01
+isaac-ng.exe+3AED8D - 52                    - push edx
+isaac-ng.exe+3AED8E - 6A 00                 - push 00
+isaac-ng.exe+3AED90 - 6A 03                 - push 03
+isaac-ng.exe+3AED92 - C7 80 A8810100 03000000 - mov [eax+000181A8],00000003
+isaac-ng.exe+3AED9C - 6A FE                 - push -02
+isaac-ng.exe+3AED9E - E9 78000000           - jmp isaac-ng.exe+3AEE1B
+isaac-ng.exe+3AEDA3 - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AEDA8 - 6A FF                 - push -01
+isaac-ng.exe+3AEDAA - 52                    - push edx
+isaac-ng.exe+3AEDAB - 6A 00                 - push 00
+isaac-ng.exe+3AEDAD - 6A 00                 - push 00
+isaac-ng.exe+3AEDAF - C7 80 A8810100 00000000 - mov [eax+000181A8],00000000
+isaac-ng.exe+3AEDB9 - 6A FE                 - push -02
+isaac-ng.exe+3AEDBB - EB 5E                 - jmp isaac-ng.exe+3AEE1B
+isaac-ng.exe+3AEDBD - 8B 46 04              - mov eax,[esi+04]
+isaac-ng.exe+3AEDC0 - 6A FF                 - push -01
+isaac-ng.exe+3AEDC2 - 52                    - push edx
+isaac-ng.exe+3AEDC3 - 6A 00                 - push 00
+isaac-ng.exe+3AEDC5 - 83 38 F2              - cmp dword ptr [eax],-0E
+isaac-ng.exe+3AEDC8 - 6A 02                 - push 02
+isaac-ng.exe+3AEDCA - 75 13                 - jne isaac-ng.exe+3AEDDF
+isaac-ng.exe+3AEDCC - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AEDD1 - 6A F1                 - push -0F
+isaac-ng.exe+3AEDD3 - C7 80 A8810100 02000000 - mov [eax+000181A8],00000002
+isaac-ng.exe+3AEDDD - EB 3C                 - jmp isaac-ng.exe+3AEE1B
+isaac-ng.exe+3AEDDF - 8B 40 10              - mov eax,[eax+10]
+isaac-ng.exe+3AEDE2 - 8B 40 38              - mov eax,[eax+38]
+isaac-ng.exe+3AEDE5 - C1 E8 02              - shr eax,02
+isaac-ng.exe+3AEDE8 - A8 01                 - test al,01
+isaac-ng.exe+3AEDEA - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AEDEF - 8B C8                 - mov ecx,eax
+isaac-ng.exe+3AEDF1 - C7 80 A8810100 02000000 - mov [eax+000181A8],00000002
+isaac-ng.exe+3AEDFB - 74 04                 - je isaac-ng.exe+3AEE01
+isaac-ng.exe+3AEDFD - 6A FA                 - push -06
+isaac-ng.exe+3AEDFF - EB 1C                 - jmp isaac-ng.exe+3AEE1D
+isaac-ng.exe+3AEE01 - 6A FE                 - push -02
+isaac-ng.exe+3AEE03 - EB 18                 - jmp isaac-ng.exe+3AEE1D
+isaac-ng.exe+3AEE05 - A1 5CD6D000           - mov eax,[isaac-ng.exe+7FD65C]
+isaac-ng.exe+3AEE0A - 6A FF                 - push -01
+isaac-ng.exe+3AEE0C - 52                    - push edx
+isaac-ng.exe+3AEE0D - 6A 02                 - push 02
+isaac-ng.exe+3AEE0F - FF B0 AC810100        - push [eax+000181AC]
+isaac-ng.exe+3AEE15 - FF B0 B8810100        - push [eax+000181B8]
+isaac-ng.exe+3AEE1B - 8B C8                 - mov ecx,eax
+isaac-ng.exe+3AEE1D - E8 AE19F2FF           - call isaac-ng.exe+2D07D0          # 001
+isaac-ng.exe+3AEE22 - 8B 4C 24 54           - mov ecx,[esp+54]
+isaac-ng.exe+3AEE26 - 5F                    - pop edi
+isaac-ng.exe+3AEE27 - 5E                    - pop esi
+isaac-ng.exe+3AEE28 - 33 CC                 - xor ecx,esp
+isaac-ng.exe+3AEE2A - E8 A8BE2300           - call isaac-ng.exe+5EACD7
+isaac-ng.exe+3AEE2F - 8B E5                 - mov esp,ebp
+isaac-ng.exe+3AEE31 - 5D                    - pop ebp
+isaac-ng.exe+3AEE32 - C3                    - ret 
