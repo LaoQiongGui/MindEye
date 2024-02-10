@@ -90,6 +90,9 @@
     <ClInclude Include="MindEyeBase\MindEyeResourcesManager.h">
       <Filter>MindEyeBase\头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MindEyeBase\MindEyeTimer.h">
+      <Filter>MindEyeBase\头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IsaacMindEye.cpp">
@@ -139,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="MindEyeBase\MindEyeResourcesManager.cpp">
       <Filter>MindEyeBase\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeBase\MindEyeTimer.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
