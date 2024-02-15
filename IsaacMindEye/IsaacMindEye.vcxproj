@@ -118,6 +118,7 @@
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
@@ -125,6 +126,7 @@
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
     <ReferencePath>$(VC_ReferencesPath_x86);</ReferencePath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|Win32'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
@@ -137,12 +139,14 @@
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|x64'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
@@ -166,7 +170,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>OpenGL32.Lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ipps.lib;ippcore.lib;OpenGL32.Lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -190,7 +194,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>OpenGL32.Lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ipps.lib;ippcore.lib;OpenGL32.Lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|Win32'">
@@ -227,7 +231,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>OpenGL32.Lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ipps.lib;ippcore.lib;OpenGL32.Lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -249,7 +253,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
-      <AdditionalDependencies>OpenGL32.Lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>ipps.lib;ippcore.lib;OpenGL32.Lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib;json_MT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SolutionRelease|x64'">
