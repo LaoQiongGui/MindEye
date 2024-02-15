@@ -65,12 +65,14 @@
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>

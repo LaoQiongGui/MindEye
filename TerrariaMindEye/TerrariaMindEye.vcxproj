@@ -75,24 +75,28 @@
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(MSBuildProjectDirectory)\output\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>$(MSBuildProjectDirectory)\middle\$(PlatformShortName)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SolutionDir)libs\$(PlatformShortName);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(SolutionDir)bin\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -109,6 +113,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,6 +154,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -170,6 +176,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
