@@ -3,14 +3,9 @@
 // MindEyeEmitter
 MindEyeEmitter::~MindEyeEmitter()
 {
-    if (pAudio2SourceVoiceL != NULL)
+    if (pAudio2SourceVoice != NULL)
     {
-        pAudio2SourceVoiceL->Stop();
-        pAudio2SourceVoiceL->DestroyVoice();
-    }
-    if (pAudio2SourceVoiceR != NULL)
-    {
-        pAudio2SourceVoiceR->Stop();
-        pAudio2SourceVoiceR->DestroyVoice();
+        pAudio2SourceVoice->Stop();
+        pAudio2SourceVoice->DestroyVoice();
     }
 }
