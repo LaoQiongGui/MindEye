@@ -292,6 +292,7 @@
     <ClInclude Include="MindEyeBase\MindEyeCommon.h" />
     <ClInclude Include="MindEyeBase\MindEyeDto.h" />
     <ClInclude Include="MindEyeBase\MindEyeFactory.h" />
+    <ClInclude Include="MindEyeBase\MindEyeFileBase.h" />
     <ClInclude Include="MindEyeBase\MindEyeRenderer2D.h" />
     <ClInclude Include="MindEyeBase\MindEyeRendererBase.h" />
     <ClInclude Include="MindEyeBase\MindEyeResourcesManager.h" />
@@ -312,6 +313,7 @@
     <ClCompile Include="MindEyeBase\MindEyeCommon.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeDto.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeFactory.cpp" />
+    <ClCompile Include="MindEyeBase\MindEyeFileBase.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeRenderer2D.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeResourcesManager.cpp" />
     <ClCompile Include="MindEyeBase\MindEyeSoundEnv.cpp" />
